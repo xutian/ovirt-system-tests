@@ -1,0 +1,18 @@
+ansible
+autoconf
+automake
+grubby
+lago
+lago-ovirt
+libselinux-python
+python-netaddr
+script
+virt-install
+wget
+docker
+python-pip
+python-virtualenv
+
+### docs
+mkdocs
+fontawesome-fonts-web

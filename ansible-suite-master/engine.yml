@@ -1,0 +1,6 @@
+---
+- name: Deploy oVirt engine
+  hosts: vm-type=ovirt-engine
+
+  roles:
+    - ovirt-deploy

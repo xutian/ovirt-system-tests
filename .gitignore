@@ -1,0 +1,26 @@
+*.pyc
+.*.swp
+.bash_history
+deployment-*
+**/LagoInitFile
+logs*
+test_logs/
+mocker-*
+
+#IDE files
+##########
+.settings
+.project
+.factorypath
+.externalToolBuilders
+.pmd
+*.ipr
+*.iml
+.idea
+.pydevproject
+
+# Ansible files
+###############
+*.retry
+failure_msg.txt
+**/ovirt-deploy/library

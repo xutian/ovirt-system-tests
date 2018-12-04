@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "templates": {
+    "el7.6-base": {
+      "versions": {
+        "v1": {
+          "source": "test", 
+          "handle": "el7.6-base", 
+          "timestamp": 1543336321.8677332
+        }
+      }
+    }
+  }, 
+  "sources": {
+    "test": {
+      "args": {
+        "baseurl": "http://10.1.0.1/infra/ovirt/"
+      }, 
+      "type": "http"
+    }
+  } 
+}

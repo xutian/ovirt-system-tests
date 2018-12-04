@@ -1,0 +1,74 @@
+[main]
+reposdir = /etc/reposync.repos.d
+max_connections = 10
+ip_resolve = 4
+gpgcheck = 0
+plugins = 1
+proxy = http://www-proxy.us.oracle.com:80
+no_proxy = ca-artifacts.us.oracle.com
+cachedir = /var/tmp/yum-i3btoX
+
+[ovirt-4.2]
+name = oVirt 4.2
+baseurl = http://ca-artifacts.us.oracle.com/auto-build/ovirt/4.2/x86_64/
+enabled = 1
+gpgcheck = 0
+
+[glusterfs-3.12-el7]
+name = GlusterFS repo
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/developer_gluster312/x86_64/
+enabled = 1
+
+[latest-el7]
+name = latest el7
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/
+enabled = 1
+
+[epel-el7]
+name = Extra Packages for Enterprise Linux 7 - x86_64
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/developer_EPEL/x86_64/
+enabled = 1
+
+[ovirt-4.2-extra]
+name = oVirt 4.2 Extra
+baseurl = http://ca-artifacts.us.oracle.com/auto-build/ovirt-extra/4.2/x86_64/
+gpgcheck = 0
+enabled = 1
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+
+[ol7_kvm]
+name = Oracle Linux $releasever Update 5 installation media copy ($basearch)
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/kvm/utils/$basearch/
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck = 0
+enabled = 1
+
+[ol7_UEKR5]
+name = Latest Unbreakable Enterprise Kernel Release 5 for Oracle Linux $releasever ($basearch)
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/UEKR5/x86_64/
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck = 0
+enabled = 1
+
+[ol7_openstack50]
+name = OpenStack 5.0 packages for Oracle Linux 7 (x86_64)
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/openstack50/x86_64/
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck = 0
+enabled = 1
+
+[ol7_openstack50_extras]
+name = OpenStack 5.0 Extra packages for Oracle Linux 7 (x86_64)
+baseurl = https://yum.oracle.com/repo/OracleLinux/OL7/openstack50_extras/x86_64/
+gpgkey = file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck = 0
+enabled = 1
+
+[internal_repo]
+name = Local repo
+baseurl = http://192.168.200.1:8585/default/el7
+enabled = 1
+ip_resolve = 4
+gpgcheck = 0
+proxy = _none_
+
